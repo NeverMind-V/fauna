@@ -1,0 +1,142 @@
+.body__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {   
+    &__top {
+        position: relative;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        height:33px;
+        padding:0 60px;
+        background:$light-purple;
+        &-list {
+            display:flex;
+            list-style-type: none;
+        }
+        &-item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__signin:not(:last-child) {
+        position: relative;
+        padding-right:30px;
+    }
+    &__signin:first-child:after {
+        content:'';  
+        position:absolute;
+        display:block;
+        right:15px;
+        top:50%;
+        transform:translate(0,-50%);
+        width:1px;
+        height:15px;
+        background:$grey;
+        margin-left:15px;      
+    }
+    &__bottom {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        overflow:hidden;
+        height:65px;
+        padding:0 60px;
+        box-shadow: 0px 1px 18px 2px rgba(162, 162, 162, 0.35);          
+    }
+    &__phone {
+        &-list {
+            list-style-type: none;
+        }
+        &-item {
+            display:flex;
+            align-items:center;
+            line-height:17px;
+            &:before {
+                content:'';
+                display:block;
+                width:16px;
+                height:16px;
+                background:url(../../img/phone.png) center center no-repeat;
+                background-size: contain;
+                margin-right:10px;
+            }
+        }
+    }
+    &__cart {
+        display:flex;
+        align-items:center;
+        &-img {
+            position:relative;
+            margin-right:8px;
+        }
+        &-img img {            
+            display:block;
+            max-width:20px;
+            height:auto;            
+        }
+        &-img.full:before {
+            content:'';
+            display:block;
+            position:absolute;
+            right:-4px;
+            top:0;
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            background:$dark-purple;
+        }
+        p {
+            font-weight: 700;
+            color:$dark-purple;
+        }
+        span {
+            font-weight:300;
+            color:$light-grey;
+        }
+    }
+    &__search {
+        position: relative;
+        width:100%;
+        max-width:500px;
+        &-input {
+            width:100%;            
+            height:25px;
+            padding-left:10px;
+            color:$light-grey;
+            background:$light-purple;
+            border:1px solid $border;
+        }
+        &-label {
+            display:block;
+            position:absolute;
+            right:10px;
+            top:50%;
+            transform:translate(0,-50%);
+            width:16px;
+            height:16px;
+            background:url(../../img/search.png) center center no-repeat;
+            background-size:contain;
+        }
+        &-submit {
+            position:absolute;
+            right:-9999px;
+            top:0;
+        }
+    }
+}
+
+.logo {
+    max-width:70px;
+    height:auto;
+    display:block;
+}
+
+.main {
+    flex:auto;
+}
+
+.footer {
+    flex-shrink:0;
+}

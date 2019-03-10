@@ -70,14 +70,11 @@ body {
   }
   
   a {
-    color: $red;
+    color: $grey;
     transition: $main_animation;
     text-decoration: none;
     &.button {
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-      }
+      text-decoration: none;      
     }
   }
   
@@ -93,8 +90,9 @@ body {
   }
   
   ul {
+    margin:0;
     li {
-      padding-bottom: 4px;
+      padding-bottom: 0px;
     }
   }
   
