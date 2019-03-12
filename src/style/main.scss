@@ -5,7 +5,8 @@
     "partials/mixins",
     "partials/typography",
     "partials/buttons",
-    "partials/feedback";
+    "partials/feedback",
+    "partials/article";
     
 
 * {
@@ -14,9 +15,47 @@
     box-sizing: border-box;
 }
 .main {
+    flex:auto;
     width:100%;
     padding:70px 0 115px;
-   &__wrapper {
-       align-items:flex-end;
-   }
+    &__block {
+        display:flex;
+        flex-direction:column;        
+    }
+    &__wrapper {
+        align-items:flex-end;
+    }
+    &__header {
+        @include font-size(24px);
+        margin-bottom:5px;
+    }
+}
+
+%date {
+    @include font-size(14px);
+    font-weight:300;
+    font-style: italic;
+    color:$light-grey;
+}
+%link {
+    position: relative;
+    display:block;    
+    font-weight:500;
+    padding-bottom:2px;
+    color:$dark-purple;
+    border:1px solid transparent;    
+    transition:$main_animation;
+    &:hover {
+        color:$dark-purple;
+        border-bottom-color: $dark-purple;
+    }
+}
+
+.logo {
+    max-width:70px;
+    height:auto;
+    display:block;
+    &--footer {
+        filter: grayscale(1) invert(100%);        
+    }
 }
