@@ -3,7 +3,10 @@
     "partials/fonts",    
     "partials/layout",
     "partials/mixins",
-    "partials/typography";
+    "partials/typography",
+    "partials/buttons",
+    "partials/feedback";
+    
 
 * {
     margin:0;
@@ -11,5 +14,9 @@
     box-sizing: border-box;
 }
 .main {
-   
+    width:100%;
+    padding:70px 0 115px;
+   &__wrapper {
+       align-items:flex-end;
+   }
 }

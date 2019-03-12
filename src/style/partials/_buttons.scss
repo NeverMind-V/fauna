@@ -1,0 +1,14 @@
+.btn {
+    display:block;
+    height:35px;
+    background:$dark-purple;
+    color:$white;
+    border:none;
+    border-radius:0;
+    text-align:center;
+    transition:$main_animation;
+    &:hover {
+        color:$white;
+        background:darken($dark-purple,10%);
+    }
+}

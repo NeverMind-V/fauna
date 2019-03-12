@@ -1,0 +1,54 @@
+.feedback {
+    position:relative;
+    width:100%;
+    min-height: 350px;
+    background:$yellow;
+    margin-bottom:65px;
+    padding-top:50px;
+    &__thumb {
+        position: absolute;
+        display:block;
+        bottom:-42px;
+        width:400px;
+        height:auto;
+    }
+    &__form {
+        input,textarea {
+            margin-bottom:10px;
+        }
+        input:first-of-type {
+            margin-top:15px;
+        }
+    }
+    &__header {
+        @include font-size(34px);
+        font-weight:800;
+    }
+    &__input,&__textarea {
+        display:block;
+        width:100%;
+        border:1px solid $border;
+        padding-left:10px;
+        background:$dark-purple;
+        color:$purple;
+        transition:$main_animation;
+        &:focus {
+            background:darken($dark-purple,10%);
+        }
+        &::placeholder {
+            color:$purple;
+        }
+    }
+    &__input {
+        height:35px;
+    }
+    &__textarea {
+        padding-top:5px;
+        min-height:90px;
+    }
+    &__submit {
+        @extend .btn;
+        width:140px;
+        @include font-size(18px);
+    }
+}

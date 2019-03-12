@@ -1,5 +1,5 @@
 .body__wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -131,6 +131,9 @@
     max-width:70px;
     height:auto;
     display:block;
+    &--footer {
+        filter: grayscale(1) invert(100%);        
+    }
 }
 
 .main {
@@ -139,4 +142,51 @@
 
 .footer {
     flex-shrink:0;
+    padding-top:40px;
+    background:$dark-purple;
+    &__bottom {
+        display: flex;
+        align-items:center;
+        justify-content:flex-end;
+        height:40px;
+        border-top:1px solid rgba($white,0.7);
+        text-align: right;
+        margin:50px 15px 0;
+        color:$white;
+    }
+    &__address {
+        font-weight:300;
+        margin:0;
+    }
+    &__logo {
+        margin-left:35px;
+    }
+    &__header {        
+        @include font-size(14px);
+        color:$white;
+        padding-bottom:5px;
+        border-bottom:1px solid $white;
+        margin-bottom:25px;
+    }
+    &__list {
+        @extend .header__phone-list;
+        &-item--phone {
+            @extend .header__phone-item;
+            &:before {
+                background:url(../../img/phone-f.png) center center no-repeat;
+                background-size: contain;
+            }
+        }
+        &-item {
+            @include font-size(13px);
+            color:$white;
+            line-height:16px;
+        }
+        &-item a,&-item--phone a {            
+            color:$white;
+            &:hover {
+                color:rgba($white,0.6);
+            }
+        }
+    }
 }
