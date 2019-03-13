@@ -5,7 +5,18 @@
     background:$white;
     border:1px solid $border;
     transition:$main_animation;
-    &:not(:last-child) {
+    &--column {
+        @extend .article;
+        flex-direction: column;        
+        padding:15px 50px 15px 25px;
+        &:last-of-type {
+            margin-bottom:30px;
+        }
+        .article__link {
+            align-self:flex-end;
+        }
+    }
+    &:not(:last-of-type) {
         margin-bottom:15px;
     }
     &:hover {

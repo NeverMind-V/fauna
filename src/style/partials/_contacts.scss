@@ -1,0 +1,34 @@
+.contacts {
+    &-wrapper {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    &__block {
+        width:100%;
+        &:not(:last-child) {
+            width:50%;
+        }
+        &:last-child {
+            margin-top:30px;
+        }
+    }
+    &__header {
+        @include font-size(36px);
+        font-weight:400;
+        color:$dark-purple;
+        margin-bottom:30px;
+    }
+    &__list {
+        list-style-type: none;
+        margin-left:15px;
+        @include font-size(16px);
+        color:rgba($dark-purple,0.8);
+    }
+    &__map {
+        margin:10px 0 30px;
+        iframe {
+            width:100%;
+            height:430px;
+        }
+    }
+}
