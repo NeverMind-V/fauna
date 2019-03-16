@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Список товаров</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="body__wrapper">
+                <header class="row">
+                    <div class="col">
+                        <div class="header">
+                            <div class="header__top">
+                                <nav>
+                                    <ul class="header__top-list">
+                                        <li class="header__top-item"><a href="#">Магазины</a></li>
+                                        <li class="header__top-item"><a href="#">Каталог</a></li>
+                                        <li class="header__top-item"><a href="#">Объявления</a></li>
+                                        <li class="header__top-item"><a href="#">Консультация</a></li>
+                                        <li class="header__top-item"><a href="#">Контакты</a></li>
+                                    </ul>
+                                </nav>
+                                <div>
+                                    <a href="#!" class="header__signin">Войти</a>
+                                    <a href="#!" class="header__signin">Регистрация</a>
+                                </div>
+                            </div>
+                            <div class="header__bottom">
+                                <a href="#!">
+                                    <img src="../img/fauna logo.png" class="logo" alt="logo">
+                                </a>
+                                <div>
+                                    <ul class="header__phone-list">
+                                        <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                                        <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                                        <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__search">
+                                    <form action="">
+                                        <input type="text" placeholder="Поиск" class="header__search-input">
+                                        <label for="searchSubmit" class="header__search-label">
+                                            <input type="submit" class="header__search-submit" id="searchSubmit">
+                                        </label>
+                                    </form>
+                                </div>
+                                <div>
+                                    <a href="#" class="header__cart">
+                                        <div class="header__cart-img full">
+                                            <img src="../img/cart.png"  alt="cart">
+                                        </div>
+                                        <p>27 937<span> грн.</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main class="main__wrapper d-flex flex-column">
+                    <div class="breadcrumbs-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="breadcrumbs">
+                                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>                
+                                    <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs-active">Статья</span></li>
+                                </ul>
+                            </div>            
+                        </div>
+                    </div>
+                    <section class="main--breadcrumbs">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="main__block">
+                                    <h2 class="main__header--underline">Собаки</h2>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="goodslist__filter">
+                                                <div class="goodslist__filter-item">
+                                                    <h4 class="goodslist__filter-title">Название фильтра</h4>                                                    
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername11" class="goodslist__filter-input">
+                                                        <label for="filtername11" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername12" class="goodslist__filter-input">
+                                                        <label for="filtername12" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername13" class="goodslist__filter-input">
+                                                        <label for="filtername13" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="goodslist__filter-item active">
+                                                    <h4 class="goodslist__filter-title">Название фильтра2</h4>
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername21" class="goodslist__filter-input">
+                                                        <label for="filtername21" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername22" class="goodslist__filter-input">
+                                                        <label for="filtername22" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername23" class="goodslist__filter-input">
+                                                        <label for="filtername23" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="goodslist__filter-item">
+                                                    <h4 class="goodslist__filter-title">Название фильтра3</h4>
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername31" class="goodslist__filter-input">
+                                                        <label for="filtername31" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername32" class="goodslist__filter-input">
+                                                        <label for="filtername32" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername33" class="goodslist__filter-input">
+                                                        <label for="filtername33" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="goodslist">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col pagination-wrapper">
+                                                            <ul class="pagination">
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link--prev"></a>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <span href="#" class="pagination__link active">1</span>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link">2</a>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link">3</a>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link">4</a>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <span href="#" class="pagination__link">...</span>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link">20</a>
+                                                                </li>
+                                                                <li class="pagination__item">
+                                                                    <a href="#" class="pagination__link--next"></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>                    
+                    <section class="feedback">
+                        <div class="row">
+                            <div class="col-4 offset-6">
+                                <div class="feedback__form">
+                                    <form action="">
+                                        <h2 class="feedback__header">Появился вопрос?</h2>
+                                        <input type="text" placeholder="Ваше имя" class="feedback__input">
+                                        <input type="text" placeholder="Ваш email" class="feedback__input">
+                                        <textarea name="" id="" placeholder="Ваш вопрос" class="feedback__textarea"></textarea>
+                                        <input type="submit" class="feedback__submit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="../img/dog-feedback.png" alt="dog" class="feedback__thumb">
+                    </section>
+                </main>
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="../img/fauna logo.png" class="logo logo--footer" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2 offset-1">
+                            <h3 class="footer__header">Карта сайта</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item"><a href="#">Магазины</a></li>
+                                <li class="footer__list-item"><a href="#">Объявления</a></li>
+                                <li class="footer__list-item"><a href="#">Консультация</a></li>
+                                <li class="footer__list-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-2 offset-1">
+                            <h3 class="footer__header">Наш адрес</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">г.Киев,
+                                    ул. Крещатик 34</li>
+                                <li class="footer__list-item">г.Киев,
+                                    ул. Крещатик 34</li>
+                                <li class="footer__list-item">г.Киев,
+                                    ул. Крещатик 34</li>
+                                <li class="footer__list-item">г.Киев,
+                                    ул. Крещатик 34</li>
+                            </ul>
+                        </div>
+                        <div class="col-2 offset-1">
+                            <h3 class="footer__header">Телефоны</h3>            
+                            <ul class="footer__list">
+                                <li class="footer__list-item--phone"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                                <li class="footer__list-item--phone"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                                <li class="footer__list-item--phone"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer__bottom">
+                                <address class="footer__address">Copyright © 2019 Fauna Все права защищены.</address>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>            
+        </div>        
+        <script src="js/main.js"></script>
+    </body>
+</html>

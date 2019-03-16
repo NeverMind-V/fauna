@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Список товаров</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="body__wrapper">
+                //= template/header.html
+                <main class="main__wrapper d-flex flex-column">
+                    //= template/breadcrumbs.html
+                    <section class="main--breadcrumbs">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="main__block">
+                                    <h2 class="main__header--underline">Собаки</h2>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="goodslist__filter">
+                                                <div class="goodslist__filter-item">
+                                                    <h4 class="goodslist__filter-title">Название фильтра</h4>                                                    
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername11" class="goodslist__filter-input">
+                                                        <label for="filtername11" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername12" class="goodslist__filter-input">
+                                                        <label for="filtername12" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername13" class="goodslist__filter-input">
+                                                        <label for="filtername13" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>                                                    
+                                                </div>
+                                                <div class="goodslist__filter-item active">
+                                                    <h4 class="goodslist__filter-title">Название фильтра2</h4>
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername21" class="goodslist__filter-input">
+                                                        <label for="filtername21" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername22" class="goodslist__filter-input">
+                                                        <label for="filtername22" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername23" class="goodslist__filter-input">
+                                                        <label for="filtername23" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="goodslist__filter-item">
+                                                    <h4 class="goodslist__filter-title">Название фильтра3</h4>
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername31" class="goodslist__filter-input">
+                                                        <label for="filtername31" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра1</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername32" class="goodslist__filter-input">
+                                                        <label for="filtername32" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра2</span>
+                                                    </div>  
+                                                    <div class="goodslist__filter-cell">
+                                                        <input type="checkbox" id="filtername33" class="goodslist__filter-input">
+                                                        <label for="filtername33" class="goodslist__filter-label"></label>
+                                                        <span class="goodslist__filter-name">значение фильтра3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="goodslist">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="goodslist__item">
+                                                            <img src="img/food.jpg" alt="goodslist" class="goodslist__thumb">
+                                                            <p class="goodslist__title">Название товара</p>
+                                                            <span class="goodslist__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur!</span>
+                                                            <div class="d-flex w-100 justify-content-between">
+                                                                <div class="goodslist__price">
+                                                                    <span>2550</span><span> грн.</span>
+                                                                </div>
+                                                                <a href="#" class="goodslist__link">Купить</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    //= template/pagination.html
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>                    
+                    //= template/feedback.html
+                </main>
+                //= template/footer.html
+            </div>            
+        </div>        
+        <script src="js/main.js"></script>
+    </body>
+</html>
