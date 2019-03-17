@@ -9,7 +9,7 @@
         <title>Товар</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container wrapper">
             <div class="body__wrapper">
                 <header class="row">
                     <div class="col">
@@ -78,19 +78,35 @@
                                     <h2 class="main__header--underline">Собаки</h2>
                                     <div class="row">
                                         <div class="col-5">
-                                            <div class="goods__thumb">
+                                            <div class="goods__thumb js-goods-thumb">
                                                 <img src="img/sofa.jpg" class="goods__thumb-image" alt="goods">
                                             </div>
-                                            <div class="goods__thumbside">
-                                                <div class="goods__thumbside-item">
-                                                    <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                            <div class="goods__thumbside js-slide">
+                                                <div>
+                                                    <div class="goods__thumbside-item js-slide-item">
+                                                        <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                                    </div>
                                                 </div>
-                                                <div class="goods__thumbside-item">
-                                                    <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                                <div>
+                                                    <div class="goods__thumbside-item js-slide-item">
+                                                        <img src="img/sofa.jpg" alt="goods__thumbside">
+                                                    </div>
                                                 </div>
-                                                <div class="goods__thumbside-item">
-                                                    <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                                <div>
+                                                    <div class="goods__thumbside-item js-slide-item">
+                                                        <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                                    </div>
                                                 </div>
+                                                <div>
+                                                    <div class="goods__thumbside-item js-slide-item">
+                                                        <img src="img/sofa.jpg" alt="goods__thumbside">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="goods__thumbside-item js-slide-item">
+                                                        <img src="img/sofa2.jpg" alt="goods__thumbside">
+                                                    </div>
+                                                </div>                                                
                                             </div>
                                         </div>
                                         <div class="col-7">
@@ -168,8 +184,8 @@
                         </div>
                     </section>                    
                     <section class="feedback">
-                        <div class="row">
-                            <div class="col-4 offset-6">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-md-6 col-lg-4 offset-md-4 offset-lg-6">
                                 <div class="feedback__form">
                                     <form action="">
                                         <h2 class="feedback__header">Появился вопрос?</h2>
@@ -185,15 +201,15 @@
                     </section>
                 </main>
                 <footer class="footer">
-                    <div class="row">
-                        <div class="col-2">
+                    <div class="row flex-column flex-md-row align-items-center align-items-md-start">
+                        <div class="col-10 col-md-2">
                             <div class="footer__logo">
                                 <a href="#">
                                     <img src="../img/fauna logo.png" class="logo logo--footer" alt="logo">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-2 offset-1">
+                        <div class="col-10 col-md-3 col-xl-2 offset-xl-1">
                             <h3 class="footer__header">Карта сайта</h3>
                             <ul class="footer__list">
                                 <li class="footer__list-item"><a href="#">Магазины</a></li>
@@ -202,7 +218,7 @@
                                 <li class="footer__list-item"><a href="#">Контакты</a></li>
                             </ul>
                         </div>
-                        <div class="col-2 offset-1">
+                        <div class="col-10 col-md-3 col-xl-2 offset-xl-1">
                             <h3 class="footer__header">Наш адрес</h3>
                             <ul class="footer__list">
                                 <li class="footer__list-item">г.Киев,
@@ -215,7 +231,7 @@
                                     ул. Крещатик 34</li>
                             </ul>
                         </div>
-                        <div class="col-2 offset-1">
+                        <div class="col-10 col-md-3 col-xl-2 offset-xl-1">
                             <h3 class="footer__header">Телефоны</h3>            
                             <ul class="footer__list">
                                 <li class="footer__list-item--phone"><a href="tel:+380993333333">+38 099 333 33 33</a></li>

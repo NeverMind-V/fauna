@@ -3,7 +3,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.wrapper {
+    max-width:1140px;
+    overflow:hidden;
+}
+
 .header {   
+    @include media-breakpoint-down(lg) {
+        margin-left:-15px;
+        margin-right:-15px;
+    }
     &__top {
         position: relative;
         display:flex;
@@ -227,6 +237,11 @@
 
 
 .footer {
+    @include media-breakpoint-down(lg) {
+        width:calc(100% + 30px);
+        margin-left:-15px;
+        margin-right:-15px;
+    }
     flex-shrink:0;
     padding-top:40px;
     background:$dark-purple;
@@ -245,7 +260,13 @@
         margin:0;
     }
     &__logo {
+        display:flex;
+        justify-content: center;
         margin-left:35px;
+        @include media-breakpoint-down(md) {
+            margin-bottom:15px;
+            margin-left:0;
+        }
     }
     &__header {        
         @include font-size(14px);
@@ -256,6 +277,9 @@
     }
     &__list {
         @extend .header__phone-list;
+        @include media-breakpoint-down(md) {
+            margin-bottom:15px;
+        }
         &-item--phone {
             @extend .header__phone-item;
             &:before {

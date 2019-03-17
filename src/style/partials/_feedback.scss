@@ -5,6 +5,11 @@
     background:$yellow;
     margin-bottom:65px;
     padding-top:50px;
+    @include media-breakpoint-down(lg) {
+        width:calc(100% + 30px);
+        margin-left:-15px;
+        margin-right:-15px;
+    }
     &__thumb {
         position: absolute;
         display:block;
@@ -13,6 +18,8 @@
         height:auto;
     }
     &__form {
+        position:relative;
+        z-index:10;
         input,textarea {
             margin-bottom:10px;
         }
@@ -32,6 +39,9 @@
         background:$dark-purple;
         color:$purple;
         transition:$main_animation;
+        @include media-breakpoint-down(xs) {
+            background:rgba($dark-purple,0.85);
+        }
         &:focus {
             background:darken($dark-purple,10%);
         }
