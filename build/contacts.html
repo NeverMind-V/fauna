@@ -9,13 +9,13 @@
         <title>Контакты</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container wrapper">
             <div class="body__wrapper">
                 <header class="row">
                     <div class="col">
                         <div class="header">
                             <div class="header__top">
-                                <nav>
+                                <nav class="d-lg-block d-none">
                                     <ul class="header__top-list">
                                         <li class="header__top-item"><a href="#">Магазины</a></li>
                                         <li class="header__top-item"><a href="#">Каталог</a></li>
@@ -24,7 +24,17 @@
                                         <li class="header__top-item"><a href="#">Контакты</a></li>
                                     </ul>
                                 </nav>
-                                <div>
+                                <div class="d-lg-none d-block">
+                                    <button class="hamburger hamburger--squeeze js-hamburger" type="button">
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button> 
+                                </div>
+                                <div class="header__search js-mobile-input"></div>
+                                <div class="js-mobile-cart"></div>
+                                
+                                <div class="d-lg-flex d-none">
                                     <a href="#!" class="header__signin">Войти</a>
                                     <a href="#!" class="header__signin">Регистрация</a>
                                 </div>
@@ -33,30 +43,52 @@
                                 <a href="#!">
                                     <img src="../img/fauna logo.png" class="logo" alt="logo">
                                 </a>
-                                <div>
+                                <div class="js-desktop-phone">
                                     <ul class="header__phone-list">
                                         <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
                                         <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
                                         <li class="header__phone-item"><a href="tel:+380993333333">+38 099 333 33 33</a></li>
                                     </ul>
                                 </div>
-                                <div class="header__search">
-                                    <form action="">
+                                <div class="header__search js-desktop-input d-lg-block d-none">
+                                    <form action="" class="js-input">
                                         <input type="text" placeholder="Поиск" class="header__search-input">
                                         <label for="searchSubmit" class="header__search-label">
                                             <input type="submit" class="header__search-submit" id="searchSubmit">
                                         </label>
                                     </form>
                                 </div>
-                                <div>
-                                    <a href="#" class="header__cart">
+                                <div class="header__cart-container js-desktop-cart">
+                                    <a href="#" class="header__cart js-cart">
                                         <div class="header__cart-img full">
                                             <img src="../img/cart.png"  alt="cart">
                                         </div>
-                                        <p>27 937<span> грн.</span></p>
+                                        <div class="d-none d-lg-block">
+                                            <p>27 937<span> грн.</span></p>
+                                        </div>                        
                                     </a>
-                                </div>
+                                </div>                
                             </div>
+                            <div class="header__mobile-wrapper js-header-mobile">
+                                <div class="header__mobile">
+                                    <div class="header__mobile-login">
+                                        <a href="#!">Войти</a>
+                                        <a href="#!">Регистрация</a>
+                                    </div>
+                                    <nav>
+                                        <ul class="header__mobile-list">
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Магазины</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Каталог</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Объявления</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Консультация</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Контакты</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Аптеки</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Клиники</a></li>
+                                            <li class="header__mobile-item"><a class="header__mobile-link" href="#">Статьи</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>            
                         </div>
                     </div>
                 </header>
@@ -73,7 +105,7 @@
                     </div>
                     <section class="main--breadcrumbs">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-12 col-lg-8">
                                 <div class="main__block">
                                     <h2 class="main__header--underline">Контакты</h2>
                                     <div class="contacts-wrapper">
@@ -104,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3 offset-1">
+                            <div class="d-none d-lg-block col-lg-3 offset-lg-1">
                                 <aside class="sidebar">
                                     <h2 class="main__header">Каталог</h2>
                                     <div class="sidebar__catalog">

@@ -1,5 +1,5 @@
 @import "bower_components/bootstrap/scss/bootstrap",
-    "bower_components/slick-carousel/slick/slick.scss",
+    "bower_components/slick-carousel/slick/slick.scss",    
     "partials/variable",
     "partials/fonts",    
     "partials/layout",
@@ -10,7 +10,9 @@
     "partials/article",
     "partials/contacts",
     "partials/goods",
-    "partials/accordeon";
+    "partials/accordeon",
+    "partials/hamburger",
+    "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
     
 
 * {
@@ -29,7 +31,33 @@
     }
     &__block {
         display:flex;
-        flex-direction:column;        
+        flex-direction:column;   
+        &-text {
+            margin-bottom:50px;
+        }     
+        &-item {
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding:10px 40px 15px 15px;
+            border-bottom:1px solid $black;
+            @include media-breakpoint-down(sm) {
+                flex-direction:column;                
+            }
+        }
+        &-info {
+            @include font-size(14px);
+            color:$grey;
+        }
+        &-location {
+            span {
+                @include font-size(14px);
+                color:$dark-purple;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top:30px;               
+            }
+        }
     }
     &__header {
         @include font-size(24px);
@@ -38,6 +66,12 @@
             @extend .main__header;
             padding-bottom:5px;
             margin-bottom:30px;
+            border-bottom:1px solid $grey;
+        }
+        &--pharmacy {
+            @extend .main__header;
+            padding-bottom:5px;
+            margin:0;
             border-bottom:1px solid $grey;
         }
     }

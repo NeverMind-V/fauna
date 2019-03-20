@@ -4,12 +4,20 @@
         flex-wrap: wrap;
     }
     &__block {
-        width:100%;
+        width:100%;        
         &:not(:last-child) {
             width:50%;
         }
         &:last-child {
             margin-top:30px;
+        }
+        @include media-breakpoint-down(sm) {
+            &:not(:last-child) {
+                width:100%;
+            }
+            &:first-child {
+                margin-bottom:30px;
+            }
         }
     }
     &__header {
